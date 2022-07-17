@@ -25,11 +25,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Textbox",
+    "path": "folders/Textbox.yy",
   },
   "resourceVersion": "1.0",
-  "name": "TO_ARTICULATE",
+  "name": "o_textbox",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "funnyzone",
-    "path": "folders/Objects/funnyzone.yy",
+    "path": "folders/Misc/funnyzone.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_be_funny",

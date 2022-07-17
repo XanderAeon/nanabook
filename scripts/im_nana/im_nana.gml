@@ -1,3 +1,0 @@
-function im_nana() {
-
-}

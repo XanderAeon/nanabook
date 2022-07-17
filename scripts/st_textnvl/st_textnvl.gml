@@ -1,5 +1,5 @@
 function st_textnvl() {
-	surface_set_target(global.surfaces.HUD);
+	//surface_set_target(global.surfaces.HUD);
 	draw_sprite(bg, 0, 0, 0);
 	for (i=array_length(talker)-1; i>=0; i--) {
 		draw_sprite_ext(talker[i].sprite,
@@ -9,16 +9,10 @@ function st_textnvl() {
 		ineg(talker[i].position > SPRITEPOS.CENTER),
 		1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].alpha*(talker[i].position <= SPRITEPOS.RIGHT));
 	}
-	if halting {surface_reset_target() exit}
-	if sprite_index == s_textbox || sprite_index == s_null {
-		/*draw_set_color(c_black);
-		draw_rectangle(x-width/2, y, x+width/2, y+height, false);
-		draw_set_color(c_white);
-		draw_rectangle(x-width/2, y, x+width/2, y+height, true);*/
-	} else {
-		draw_sprite(sprite_index, 0, x, y);
-	}
-	set_font_style(font);
+	if halting { exit}
+
+	draw_sprite(sprite_index, 0, x, y);
+	draw_set_font(font);
 	clr = c_white;
 	var xpos = 0;
 	var lb = 0;
@@ -70,7 +64,7 @@ function st_textnvl() {
 		    }
 		    xpos += sizemult;
 		}
-		set_font_style(font);
+		draw_set_font(font);
 		lb++;
 		clr = c_white;
 		var clrdur = 0;
@@ -123,5 +117,4 @@ function st_textnvl() {
 	    }
 	    xpos += sizemult;
 	}
-	surface_reset_target();
 }

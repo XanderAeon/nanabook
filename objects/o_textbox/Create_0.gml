@@ -38,7 +38,7 @@ didfuncs = array_create(999);
 atsound = 0;
 atfunc = 0;
 backlogging = false;
-
+font = ft_couriernew;
 backlog = [];
 
 nvlline = 0;
@@ -46,7 +46,5 @@ nvlline = 0;
 bg = s_null;
 
 drawstates = [st_textadv, st_textnvl];
-
-with o_pickup pulled = true;
 
 halting = false;

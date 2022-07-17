@@ -1,6 +1,6 @@
 function textline_next() {
 	do {
-		set_font_style(font);
+		draw_set_font(font);
 		skipped = false;
 		waiting = 0;
 		waited = array_create(20);

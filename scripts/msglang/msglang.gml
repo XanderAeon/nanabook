@@ -12,9 +12,10 @@ function msglang(english, japanese, language=global.lang) {
 	}
 }
 
-
 enum LANGUAGE {
 	NULL,
 	ENGLISH,
 	JAPANESE,
 }
+
+global.lang = LANGUAGE.ENGLISH;

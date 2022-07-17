@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Textbox",
+    "path": "folders/Textbox.yy",
   },
   "resourceVersion": "1.0",
-  "name": "im_nana",
+  "name": "x_textstyles",
   "tags": [],
   "resourceType": "GMScript",
 }
